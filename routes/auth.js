@@ -5,12 +5,6 @@ const User = require('../models/User');
 const jwt = require('jsonwebtoken');
 const { createError } = require('../error');
 
-router.get('/abc',async (req,res) => {
-    const users = await User.find();
-    res.send(users);
-})
-
-
 router.post('/', async (req, res, next) => {
     try {
         const userExist = await User.findOne({email: req.body.email});
