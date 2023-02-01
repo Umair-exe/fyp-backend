@@ -12,7 +12,7 @@ const multer = require('multer')
 const cors = require('cors');
 
 app.use(cors({
-    origin: ["http://localhost:3000","https://fyp.netlify.app/"],
+    origin: ["http://localhost:3000","https://fyp-frontend.netlify.app"],
     optionsSuccessStatus: 200
 
 }));
