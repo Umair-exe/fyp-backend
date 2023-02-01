@@ -70,3 +70,5 @@ app.listen(PORT, () => {
     connect();
     console.log(`server is running on PORT ${PORT} `)
 })
+
+module.exports = app;
